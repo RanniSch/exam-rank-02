@@ -1,0 +1,44 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/09/10 12:24:35 by rschlott          #+#    #+#             */
+/*   Updated: 2022/09/11 11:29:01 by rschlott         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*Write a function that displays a string on the standard output.
+
+The pointer passed to the function contains the address of the string's first
+character.
+
+Your function must be declared as follows:
+
+void	ft_putstr(char *str);*/
+
+#include <unistd.h>
+
+void	ft_putstr(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i] != 0)
+	{
+		write(1, &str[i], 1);
+		i++;
+	}
+}
+
+/*int main(void)
+{
+    char    string[50] = "will ich 50 Blumen haben?";
+    char    *str;
+
+    str = &string[0];
+    ft_putstr(str);
+    return(0);
+}*/
