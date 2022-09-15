@@ -6,7 +6,7 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 16:06:26 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/15 16:23:30 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/15 17:02:44 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,27 +23,30 @@ Your function must be declared as follows:
 
 int	    is_power_of_2(unsigned int n);*/
 
-/*int is_power_of_2(unsigned int n)
+int is_power_of_2(unsigned int n)       // version 1
 {
-    if (n % 2 == 0 && n == 1)
-        return(1);
-    else
-        return(0);
-}*/
+    if (n == 1)
+        return (1);
+    while (n != 0 && n % 2 == 0)
+    {
+        n = n / 2;
+        if (n == 1)
+            return (1);
+    }
+    return (0);
+}
 
-int is_power_of_2(unsigned int n)
+int is_power_of_2(unsigned int n)       // version 2
 {
 	unsigned int number = 1;
 	
 	while(number <= n)
 	{
 		if (number == n)
-		{
-			return 1;
-		}
+			return (1);
 		number = number * 2;
 	}
-	return 0;
+	return (0);
 }
 
 #include <stdio.h>
@@ -52,6 +55,6 @@ int main(void)
 {
     int n;
 
-    n = 32;
+    n = 64;
     printf("%d\n", is_power_of_2(n));
 }
