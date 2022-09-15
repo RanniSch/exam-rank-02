@@ -6,7 +6,7 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 16:06:26 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/15 17:02:44 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/15 18:57:26 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int is_power_of_2(unsigned int n)       // version 1
     return (0);
 }
 
-int is_power_of_2(unsigned int n)       // version 2
+int is_power_of_2(unsigned int n)       // version 2 EINFACHER
 {
 	unsigned int number = 1;
 	
