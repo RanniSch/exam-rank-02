@@ -6,7 +6,7 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 11:01:13 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/16 11:01:31 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/16 13:15:32 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,8 @@ string.
 Your function must be declared as follows:
 
 int	ft_atoi_base(const char *str, int str_base);*/
+
+int ft_atoi_base(const char *str, int str_base)
+{
+    
+}
