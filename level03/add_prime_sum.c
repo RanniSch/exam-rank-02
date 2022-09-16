@@ -6,7 +6,7 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 08:59:44 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/16 10:26:24 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/16 11:07:14 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,10 +65,7 @@ int	ft_is_prime(int nb)
 	while (i < nb)
 	{
 		if (nb % i != 0)
-		{
 			i++;
-			continue ;
-		}
 		else
 			return (0);
 	}
