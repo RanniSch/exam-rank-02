@@ -6,7 +6,7 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 22:07:49 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/17 13:25:34 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/17 13:30:04 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ Examples:
 
 #include <stdlib.h>
 #include <stddef.h>
-#include <stdio.h>
 
 int *ft_range(int start, int end)
 {
@@ -59,7 +58,6 @@ int *ft_range(int start, int end)
         {
             ptr[i] = begin;
             i++;
-            printf("begin %d\n", begin);
         }
     }
     if (start > end)
@@ -69,13 +67,12 @@ int *ft_range(int start, int end)
         {
             ptr[i] = begin;
             i++;
-            printf("begin %d\n", begin);
         }
     }       
     return (ptr);
 }
 
-int main()
+/*int main()
 {
 	int start;
 	int end;
@@ -93,23 +90,25 @@ int main()
 	}
     printf("%d\n", ptr[i]);
 	return (0);
-}
+}*/
 
-/*int main(void)
+#include <stdio.h>
+
+int main(void)
 {
     int start;
     int end;
     int *ptr;
     int i;
 
-    start = 0;
-    end = -3;
+    start = -1;
+    end = 2;
     i = 0;
     ptr = ft_range(start, end);
-    while (ptr[i] < 4)
+    while (i < 4)
     {
         printf("%d, ", ptr[i]);
         i++;
     }        
     return (0);   
-}*/
+}
