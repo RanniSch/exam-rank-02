@@ -6,7 +6,7 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/17 21:24:13 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/17 21:32:08 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/17 21:56:04 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,47 +26,47 @@ char	*ft_itoa(int nbr);
 #include <stddef.h>
 #include <stdlib.h>
 
-int	ft_lengthcal(int n)
+int	ft_lengthcal(int nbr)
 {
 	int	len;
 
 	len = 0;
-	if (n <= 0)
+	if (nbr <= 0)
 		len++;
-	while (n != 0)
+	while (nbr != 0)
 	{
 		len++;
-		n = n / 10;
+		nbr = nbr / 10;
 	}
 	return (len);
 }
 
-int	ft_positive(int n)
+int	ft_positive(int nbr)
 {
-	if (n < 0)
+	if (nbr < 0)
 		return (-n);
-	return (n);
+	return (nbr);
 }
 
-char	*ft_itoa(int n)
+char	*ft_itoa(int nbr)
 {
 	char	*dest;
 	int		len;
 
-	len = ft_lengthcal(n);
+	len = ft_lengthcal(nbr);
 	dest = malloc(1 * (len + 1));
 	if (!dest)
 		return (NULL);
 	dest[len] = '\0';
-	if (n < 0)
+	if (nbr < 0)
 		dest[0] = '-';
-	if (n == 0)
+	if (nbr == 0)
 		dest[0] = '0';
-	while (n != 0)
+	while (nbr != 0)
 	{
 		len--;
-		dest[len] = ft_positive(n % 10) + '0';
-		n = n / 10;
+		dest[len] = ft_positive(nbr % 10) + '0';
+		nbr = nbr / 10;
 	}
 	return (dest);
 }
