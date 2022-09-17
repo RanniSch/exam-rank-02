@@ -6,7 +6,7 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 19:37:54 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/15 19:41:29 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/16 10:38:21 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,9 @@ $
 
 int main(int argc, char **argv)
 {
-	int i = 0;
+	int i; 
 	
+	i = 0;	
 	if (argc == 2)
 	{
 		while(argv[1][i] != '\0')

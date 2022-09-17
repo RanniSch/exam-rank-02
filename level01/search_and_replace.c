@@ -6,7 +6,7 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/11 14:07:24 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/11 14:59:30 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/16 09:22:15 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ int	main(int argc, char **argv)
 	i = 0;
 	if (argc == 4)
 	{
-        count_2 = ft_strlen(argv[2]);
+        count_2 = ft_strlen(argv[2]);	//pointer von argv[2]
         count_3 = ft_strlen(argv[3]);
         if (count_2 == 1 && count_3 == 1)
         {

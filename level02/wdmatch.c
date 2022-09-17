@@ -6,7 +6,7 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 19:54:28 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/15 20:00:09 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/16 13:15:41 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,4 +37,13 @@ $
 $>./wdmatch | cat -e
 $
 */
+
+int main(int argc, char **argv)
+{
+    if (argc == 3)
+    {
+        
+    }
+    write (1, "\n", 1);
+}
 
