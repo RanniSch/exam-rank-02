@@ -6,7 +6,7 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 18:50:03 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/15 18:56:59 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/18 12:50:07 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,7 @@ $
 #include <stdio.h>
 #include <unistd.h>
 
-/*
-* checks if char already exists in str1;
-*/
+//checks if char already exists in str1;
 int	ft_check_doubles(char *str, char c, int index)
 {
 	int i;
@@ -58,11 +56,9 @@ int	ft_check_doubles(char *str, char c, int index)
 	return(1);
 }
 
-/*
-* iterate through strin2 for each position of str1;
-* if same chars then check if char already exists in str1;
-* if no write it and break the loop;
-*/
+//iterate through str2 for each position of str1;
+//if same chars then check if char already exists in str1;
+//if no write it and break the loop;
 int main(int argc, char **argv)
 {
 	int i;

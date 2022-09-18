@@ -6,11 +6,16 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 07:57:37 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/15 20:02:34 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/18 12:21:47 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Write a function that converts the string argument str to an integer (type int)
+/*Assignment name  : ft_atoi
+Expected files   : ft_atoi.c
+Allowed functions: None
+--------------------------------------------------------------------------------
+
+Write a function that converts the string argument str to an integer (type int)
 and returns it.
 
 It works much like the standard atoi(const char *str) function, see the man.

@@ -6,11 +6,16 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 07:14:32 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/12 07:54:18 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/18 12:17:12 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Write a program that takes a single string in lowerCamelCase format
+/*Assignment name  : camel_to_snake
+Expected files   : camel_to_snake.c
+Allowed functions: malloc, realloc, write
+--------------------------------------------------------------------------------
+
+Write a program that takes a single string in lowerCamelCase format
 and converts it into a string in snake_case format.
 
 A lowerCamelCase string is a string where each word begins with a capital letter

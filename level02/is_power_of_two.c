@@ -6,7 +6,7 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 16:06:26 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/15 18:57:26 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/18 12:51:29 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ int is_power_of_2(unsigned int n)       // version 2 EINFACHER
 	return (0);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 
 int main(void)
 {
@@ -57,4 +57,4 @@ int main(void)
 
     n = 64;
     printf("%d\n", is_power_of_2(n));
-}
+}*/
