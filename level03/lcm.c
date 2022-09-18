@@ -6,7 +6,7 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/17 16:13:19 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/17 16:14:04 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/18 15:49:55 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,33 @@ Your function must be prototyped as follows:
   unsigned int    lcm(unsigned int a, unsigned int b);
 */
 
-unsigned int    lcm(unsigned int a, unsigned int b)
+/*
+Die Suche nach dem kleinsten gemeinsamen Vielfachen
+*/
+unsigned int lcm(unsigned int a, unsigned int b)
 {
-    
+	unsigned int n;	
+
+	if (a == 0 || b == 0)
+		return (0);
+	if (a > b)
+		n = a;
+	else
+		n = b;
+	while (1)
+	{
+		if (n % a == 0 && n % b == 0)
+			return (n);
+		++n;
+	}
 }
+
+/*#include <stdio.h>
+
+int main(void)
+{
+  int result;
+  result = lcm(8, 13);
+  printf("%d", result);
+  return (0);
+}*/

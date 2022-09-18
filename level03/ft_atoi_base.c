@@ -6,7 +6,7 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 11:01:13 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/16 13:15:32 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/18 15:39:54 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,50 @@ Your function must be declared as follows:
 
 int	ft_atoi_base(const char *str, int str_base);*/
 
-int ft_atoi_base(const char *str, int str_base)
+int	ft_atoi_base(const char *str, int str_base)
 {
-    
+	int i;
+	int result;
+	int sign;
+
+	i = 0;
+	result = 0;
+	sign = 1;
+	if (str[i] == '-')
+	{
+		sign = -1;
+		i++;
+	}
+	while (str[i] != '\0')
+	{
+		result = result * str_base;
+		if (str[i] >= '0' && str[i] <= '9')
+		{
+			result = result + str[i] - '0';
+		}
+		else if (str[i] >= 'a' && str[i] <= 'f')
+		{
+			result = result + str[i] - 87;
+		}
+		else if (str[i] >= 'A' && str[i] <= 'F')
+		{
+			result = result + str[i] - 55;
+		}
+		i++;
+	}
+	result = result * sign;
+	return (result);
 }
+
+/*#include <stdio.h>
+
+int main(void)
+{
+	const char *str = "0123bFa";
+	int num = 0;
+	int base = 4;
+
+	num =ft_atoi_base(str, base);
+	printf("num is:%d\n", num);
+	return (0);
+}*/
