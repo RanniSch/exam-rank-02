@@ -6,7 +6,7 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 08:48:11 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/16 08:49:40 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/18 14:44:46 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,21 +32,29 @@ _____________
  0110  0100
  */
 
- unsigned char  reverse_bits(unsigned char octet)
- {
-    
- }
-
- /*unsigned char	reverse_bits(unsigned char octet)
+unsigned char	reverse_bits(unsigned char octet)
 {
-	int		i = 8;
-	unsigned char	res = 0;
+	int i;
+	unsigned char result;
 
+	i = 8;
+	result = 0;
 	while (i > 0)
 	{
-		res = res * 2 + (octet % 2);
+		result = result * 2 + (octet % 2);
 		octet = octet / 2;
 		i--;
 	}
-	return (res);
+	return (result);
+}
+
+/*#include <stdio.h>
+
+int main(void)
+{
+	unsigned char chr;
+	
+	chr = 1;
+	printf("%d\n", reverse_bits(chr));
+	return (0);
 }*/

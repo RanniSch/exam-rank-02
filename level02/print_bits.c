@@ -6,7 +6,7 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 19:29:31 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/18 14:36:26 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/18 14:43:19 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ and that is the reason for using 1 << x, because that yields powers of two:
 1 << 2 == 2^2 == 4 == binary 00000100
 1 << 3 == 2^3 == 8 == binary 00001000
 etc
+128 is a reversed byte!!!
 */
 
 #include <unistd.h>
@@ -61,11 +62,11 @@ void print_bits(unsigned char octet)
 	}
 }
 
-int main(void)
+/*int main(void)
 {
 	unsigned char chr;
 	
 	chr = 8;
 	print_bits(chr);
 	return (0);
-}
+}*/
