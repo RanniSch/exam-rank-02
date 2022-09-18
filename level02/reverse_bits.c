@@ -6,7 +6,7 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 08:48:11 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/18 14:44:46 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/18 15:08:15 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ _____________
 	 ||
 	 \/
  0110  0100
+
+ 128 is a reversed byte!!!
  */
 
 unsigned char	reverse_bits(unsigned char octet)
