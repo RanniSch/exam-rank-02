@@ -6,11 +6,16 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/10 12:24:35 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/11 11:29:01 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/18 12:04:17 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Write a function that displays a string on the standard output.
+/*Assignment name  : ft_putstr
+Expected files   : ft_putstr.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a function that displays a string on the standard output.
 
 The pointer passed to the function contains the address of the string's first
 character.

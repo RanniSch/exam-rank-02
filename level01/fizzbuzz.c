@@ -6,11 +6,16 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/10 11:40:09 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/11 11:28:45 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/18 12:03:30 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Write a program that prints the numbers from 1 to 100, each separated by a
+/*Assignment name  : fizzbuzz
+Expected files   : fizzbuzz.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that prints the numbers from 1 to 100, each separated by a
 newline.
 If the number is a multiple of 3, it prints 'fizz' instead.
 If the number is a multiple of 5, it prints 'buzz' instead.

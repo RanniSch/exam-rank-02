@@ -6,11 +6,16 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/11 14:07:24 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/16 09:22:15 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/18 12:13:55 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Write a program called search_and_replace that takes 3 arguments, the first
+/*Assignment name  : search_and_replace
+Expected files   : search_and_replace.c
+Allowed functions: write, exit
+--------------------------------------------------------------------------------
+
+Write a program called search_and_replace that takes 3 arguments, the first
 arguments is a string in which to replace a letter (2nd argument) by
 another one (3rd argument).
 
@@ -41,7 +46,7 @@ int	main(int argc, char **argv)
 	int i;
 
 	i = 0;
-	if (argc == 4 && !argv[2][1] && !argv[3][1])  // what about the check that the second and the third string is a letter?
+	if (argc == 4 && !argv[2][1] && !argv[3][1])  // check that second and third string are letters itn't requested
 	{
         while (argv[1][i] != '\0')
 		{

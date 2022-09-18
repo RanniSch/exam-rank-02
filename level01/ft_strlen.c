@@ -6,11 +6,16 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/10 13:01:06 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/11 11:30:09 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/18 12:06:58 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Write a function that returns the length of a string.
+/*Assignment name  : ft_strlen
+Expected files   : ft_strlen.c
+Allowed functions:
+--------------------------------------------------------------------------------
+
+Write a function that returns the length of a string.
 
 Your function must be declared as follows:
 

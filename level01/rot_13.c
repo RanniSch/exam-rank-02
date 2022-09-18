@@ -6,11 +6,16 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/11 12:35:36 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/11 13:30:06 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/18 12:10:33 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Write a program that takes a string and displays it, replacing each of its
+/*Assignment name  : rot_13
+Expected files   : rot_13.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a string and displays it, replacing each of its
 letters by the letter 13 spaces ahead in alphabetical order.
 
 'z' becomes 'm' and 'Z' becomes 'M'. Case remains unaffected.

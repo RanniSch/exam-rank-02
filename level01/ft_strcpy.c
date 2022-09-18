@@ -6,11 +6,16 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/10 12:36:26 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/11 11:29:20 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/18 12:05:03 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Reproduce the behavior of the function strcpy (man strcpy).
+/*Assignment name  : ft_strcpy
+Expected files   : ft_strcpy.c
+Allowed functions:
+--------------------------------------------------------------------------------
+
+Reproduce the behavior of the function strcpy (man strcpy).
 
 Your function must be declared as follows:
 
@@ -45,5 +50,4 @@ int	main(void)
     s1 = ft_strcpy(s1, s2);
     printf("%s", s1);
     return(0);
-}
-*/
+}*/

@@ -6,11 +6,16 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/10 13:21:35 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/11 11:28:09 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/18 12:08:51 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Write a program called repeat_alpha that takes a string and display it
+/*Assignment name  : repeat_alpha
+Expected files   : repeat_alpha.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program called repeat_alpha that takes a string and display it
 repeating each alphabetical character as many times as its alphabetical index,
 followed by a newline.
 

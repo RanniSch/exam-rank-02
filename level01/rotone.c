@@ -6,11 +6,16 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/11 13:33:07 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/11 13:46:25 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/18 12:11:20 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Write a program that takes a string and displays it, replacing each of its
+/*Assignment name  : rotone
+Expected files   : rotone.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a string and displays it, replacing each of its
 letters by the next one in alphabetical order.
 
 'z' becomes 'a' and 'Z' becomes 'A'. Case remains unaffected.

@@ -6,11 +6,16 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/10 10:08:03 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/11 11:28:28 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/18 12:02:31 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Write a program that takes a string and displays its first word,
+/*Assignment name  : first_word
+Expected files   : first_word.c
+Allowed functions: write
+-------------------------------------------------------------------------------- 
+
+Write a program that takes a string and displays its first word,
 	followed by a
 newline.
 A word is a section of string delimited by spaces/tabs or by the start/end of

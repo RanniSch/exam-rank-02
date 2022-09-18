@@ -6,11 +6,16 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/11 13:52:48 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/11 14:06:24 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/18 12:14:44 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Write a program that takes a string and reverses the case of all its letters.
+/*Assignment name  : ulstr
+Expected files   : ulstr.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a string and reverses the case of all its letters.
 Other characters remain unchanged.
 
 You must display the result followed by a '\n'.

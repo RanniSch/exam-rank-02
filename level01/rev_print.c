@@ -6,11 +6,16 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/11 12:00:19 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/11 12:34:36 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/18 12:09:37 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Write a program that takes a string, and displays the string in reverse
+/*Assignment name  : rev_print
+Expected files   : rev_print.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a string, and displays the string in reverse
 followed by a newline.
 
 If the number of parameters is not 1, the program displays a newline.
