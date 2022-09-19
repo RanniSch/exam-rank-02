@@ -6,7 +6,7 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/17 17:42:54 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/17 17:45:04 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/19 08:05:02 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,3 +49,57 @@ $>./tab_mult | cat -e
 $
 $>
 */
+
+#include <unistd.h>
+
+int ft_atoi_pos_simple(const char *str)
+{
+    long int    convert;
+
+    convert = 0;
+    while (*str && *str >= '0' && *str <= '9')
+    {
+        convert = (convert * 10) + *str - '0';
+        str++;
+    }
+    return (convert);
+}
+
+void    ft_putnbr_pos(int n)
+{
+    if (n < 10)
+    {
+        n = n + '0';
+        write (1, &n, 1);
+    }
+    else
+    {
+        ft_putnbr_pos(n / 10);
+        ft_putnbr_pos(n % 10);
+    }    
+}
+
+int main(int argc, char **argv)
+{
+    int i;
+    int number;
+
+    if (argc == 2)
+    { 
+        i = 1;
+        number = ft_atoi_pos_simple(argv[1]);
+        while (i <= 9)
+        {
+            ft_putnbr_pos(i);
+            write (1, " x ", 3);
+            ft_putnbr_pos(number);
+            write (1, " = ", 3);
+            ft_putnbr_pos(i * number);
+            if (i < 9)
+                write (1, "\n", 1);
+            i++;
+        }
+    }
+    write (1, "\n", 1);
+    return (0);
+}
