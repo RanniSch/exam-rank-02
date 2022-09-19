@@ -6,7 +6,7 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/17 22:18:44 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/17 22:21:27 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/19 09:58:13 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,3 +46,26 @@ int ascending(int a, int b)
 
 #include "list.h"
 
+t_list	*sort_list(t_list* lst, int (*cmp)(int, int))
+{
+	int swap;
+	t_list *tmp;
+
+	tmp = lst;
+	while(lst->next != 0)
+	{
+		if ((*cmp)(lst->data, lst->next->data) == 0)
+		{
+			swap = lst->data;
+			lst->data = lst->next->data;
+			lst->next->data = swap;
+			lst = tmp;
+		}
+		else
+		{
+			lst = lst->next;
+		}
+	}
+	lst = tmp;
+	return (lst);
+}
