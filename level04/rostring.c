@@ -6,7 +6,7 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/17 22:10:38 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/17 22:17:13 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/19 09:52:17 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,3 +45,42 @@ $>./rostring | cat -e
 $
 $>
 */
+
+#include <unistd.h>
+
+int main(int argc, char **argv)
+{
+	int i;
+	int start;
+
+	i = 0;
+	if (argc >= 2)
+	{
+		while (argv[1][i] && (argv[1][i] == ' ' || argv[1][i] == '\t'))
+			i++;
+		start = i;
+		while (argv[1][i] != '\0')
+		{
+			while (argv[1][i] && (argv[1][i] != ' ' && argv[1][i] != '\t'))
+				i++;
+			while (argv[1][i] && (argv[1][i] == ' ' || argv[1][i] == '\t'))
+				i++;
+			while (argv[1][i] && (argv[1][i] != ' ' && argv[1][i] != '\t' && (argv[1][i -1] == ' ' || argv[1][i -1] == '\t')))
+			{
+				while (argv[1][i] && (argv[1][i] != ' ' && argv[1][i] != '\t'))
+				{
+					write(1, &argv[1][i], 1);
+					i++;
+				}
+				write(1, " ", 1);
+				i++;
+			}
+		}
+		while (argv[1][start] && (argv[1][start] != ' ' && argv[1][start] != '\t'))
+		{
+			write(1, &argv[1][start], 1);
+			start++;
+		}
+	}
+	write(1, "\n", 1);
+}

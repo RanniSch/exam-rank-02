@@ -6,7 +6,7 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/17 21:53:19 by rschlott          #+#    #+#             */
-/*   Updated: 2022/09/19 08:57:56 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/09/19 09:06:32 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int	ft_wordlen(char *str)
 	int i = 0;
 
 	while (str[i] != '\0' && str[i] != ' ' && str[i] != '\t' && str[i] != '\n')
-		++i;
+		i++;
 	return (i);
 }
 
@@ -47,7 +47,7 @@ char	*word_dupe(char *str)
 	while (i < len)
 	{
 		word[i] = str[i];
-		++i;
+		i++;
 	}
 	return (word);
 }
@@ -74,15 +74,15 @@ void	fill_words(char **array, char *str)
 	int word_index = 0;
 	
 	while (*str == ' ' || *str == '\t' || *str == '\n')
-		++str;
+		str++;
 	while (*str != '\0')
 	{
 		array[word_index] = word_dupe(str);
-		++word_index;
+		word_index++;
 		while (*str != '\0' && *str != ' ' && *str != '\t' && *str != '\n')
-			++str;
+			str++;
 		while (*str == ' ' || *str == '\t' || *str == '\n')
-			++str;
+			str++;
 	}
 }
 
